@@ -12,9 +12,9 @@ public class App
     public static void main( String[] args )
     {
         ApplicationContext context = new ClassPathXmlApplicationContext("springconfig.xml");
-        Student student = (Student) context.getBean("st2");
-        student.show();
-        Teacher t = (Teacher) context.getBean("t1");
-        t.show();
+        Student student = (Student) context.getBean("st1");
+//        student.setAge(30);
+        //System.out.println(student.getAge()+":"+student.getRno());
+        student.writeExam();
     }
 }

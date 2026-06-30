@@ -1,10 +1,12 @@
 package org.example;
 
 public class Student {
-    public Student() {
-        System.out.println("Student is Created");
+    private Writer writer;
+    public Writer getWriter() {
+        return writer;
     }
-    public void show(){
-       System.out.println("In show Method");
-   }
+
+    public void setWriter(Writer writer) {
+        this.writer = writer;
+    }
 }

@@ -3,7 +3,14 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="st1" class="org.example.Student"></bean>
+    <bean id="st1" class="org.example.Student">
+       <!-- <property name="age" value="30"/>-->
+        <!--<property name="rno" value="29"/>-->
+        <property name="pen" ref="p1"/>
+    </bean>
     <bean id="st2" class="org.example.Student"></bean>
-    <bean id = "t1" class="org.example.Teacher"></bean>
+    <bean id="p1" class="org.example.Pen"></bean>
+    <bean id="pc1" class="org.example.Pencil"></bean>
+    </bean>
+
 </beans>
