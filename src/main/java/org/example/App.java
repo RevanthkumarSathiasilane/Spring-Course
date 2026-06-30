@@ -15,6 +15,6 @@ public class App
         Student student = (Student) context.getBean("st1");
 //        student.setAge(30);
         //System.out.println(student.getAge()+":"+student.getRno());
-        student.writeExam();
+         student.writeExam();
     }
 }
